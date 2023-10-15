@@ -13,14 +13,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
         year += 1
     }
 
-    const halloween = new Date(`October 11, ${year} 00:00:00`)
-    const timeUntil = halloween.getTime() - now.getTime()
+    const silus = new Date(`October 11, ${year} 00:00:00`)
+    const timeUntil = silus.getTime() - now.getTime()
     const daysUntil = Math.abs(Math.ceil(timeUntil / (1000 * 60 * 60 * 24)))
 
     switch (daysUntil) {
         case 1:
             h1.innerHTML = `Silus Birthday is <span id="date">${daysUntil}</span> days away!`
-            title.innerHTML = `${daysUntil} Day Until Silus' Birthday !`
+            title.innerHTML = "${daysUntil} Days Until Silus' Birthday !"
             break;
         case 0:
             h1.innerHTML = `<span id="date">Today is Silus Birthday!</span> Eat, drink and be scary!`
