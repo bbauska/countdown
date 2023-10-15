@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         year += 1
     }
 
-    const halloween = new Date(`October 31, ${year} 00:00:00`)
+    const halloween = new Date(`October 11, ${year} 00:00:00`)
     const timeUntil = halloween.getTime() - now.getTime()
     const daysUntil = Math.abs(Math.ceil(timeUntil / (1000 * 60 * 60 * 24)))
 
